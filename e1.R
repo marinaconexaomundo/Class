@@ -15,8 +15,10 @@
 
 rw_dois <- function(domain, prob, n){
 
-  sample(x =  domain, size = n, replace = TRUE, prob = prob)
-
+  initial <- 0
+  x <- sample(x =  domain, size = n, replace = TRUE, prob = prob)
+  vetor <- c(0,x)
+  sum(x)
 }
 
 rw_dois(domain = c(-1,1), prob = c(0.5,0.5), n = 50)
